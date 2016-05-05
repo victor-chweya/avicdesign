@@ -1,0 +1,95 @@
+/*--------------------------------------------------------------
+TABLES
+--------------------------------------------------------------*/
+table,
+th,
+td {
+    border: 1px solid #eaeaea;
+}
+
+table {
+    background: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border-width: 1px 0 0 1px;
+    /*table-layout: fixed;*/ /*prevent html table from becoming too wide */
+    margin: 0 0 4em;
+    width: 100%;
+   
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+
+th {
+    border-width: 0 1px 1px 0;
+    font-weight: 700;
+}
+
+td {
+    border-width: 0 1px 1px 0;
+}
+
+th, td {
+    padding: 0.4em 1em;
+}
+
+tbody tr {
+  transition: background 0.25s ease;
+
+}
+tbody tr:hover {
+  background: #eaeaea;
+}
+
+td:first-child,
+th:first-child {
+    border-left-width: 0;
+}
+
+thead {
+    
+    border-bottom: 1px solid #eaeaea; 
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/* nth-child selector for modern browsers */
+.table--striped tr:nth-child(even) td{
+    background-color: #eaeaea;
+}
+.table--striped tr:nth-child(even) th{
+    background-color: #eaeaea;
+}
+.table--striped td,
+.table--striped th {
+    border-width: 0;
+}
+
+/* BORDERED TABLES */
+.table--bordered td, .table--bordered th {
+    border-bottom: 1px solid #eaeaea;
+}
+.table--bordered tbody > tr:last-child td,
+.table--bordered tbody > tr:last-child th,
+{
+    border-bottom-width: 0;
+}
+
+
+/* HORIZONTAL BORDERED TABLES */
+
+.table--horizontal td,
+.table--horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+.table--horizontal tbody > tr:last-child td,
+.table--horizontal tbody > tr:last-child th  {
+    border-bottom-width: 0;
+}

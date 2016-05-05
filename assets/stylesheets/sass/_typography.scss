@@ -1,0 +1,308 @@
+/*
+===========================================
+ TYPOGRAPHY
+===========================================
+*/
+/*
+traditional type scale:
+9/10/11/12/14/16/18/21/24/30/36/48/60/72px
+ baseline 6px;
+*/
+/*
+===========================================
+ @import fonts
+===========================================
+*/
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700,300,600,400);*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+/*@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);*/
+
+
+/*
+===========================================
+ typography
+===========================================
+*/
+html,
+body {
+  font-size: 100%;
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.5rem;
+  letter-spacing: .075rem;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+   font-size: 1.125rem; /* 18px/16px */
+   line-height:1.5rem; /* 24px/16px */
+   color: #262626;
+   font-weight: 300;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+   hyphens: auto;
+  -ms-word-wrap: break-word;
+   word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;   
+}
+
+/*
+===========================================
+ headings
+===========================================
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6  {
+  font-size: 100%;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: .075rem; 
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  margin-bottom:1.125rem; /* 6px/16px bottom margin for paragraphs */
+}
+
+h1  { 
+  font-size: 3rem; /* 48px/16px */
+  line-height:3.375rem; /* 54px/16px */  
+}
+
+h2 { 
+  font-size: 2.25rem; /* 36px/16px */
+  line-height:3rem; /* 48px/16px */  
+}
+
+h3  { 
+  font-size: 1.875rem; /* 30px/16px */
+  line-height:2.25rem; /* 36px/16px */  
+}
+
+h4  { 
+  font-size: 1.5rem; /* 24px/16px */
+  line-height:1.875rem; /* 30px/16px */  
+}
+h5  { 
+  font-size: 1.3125rem; /* 21px/16px */
+  line-height:1.6875rem; /* 27px/16px */  
+}
+
+h6  { 
+  font-size: 1.125rem; /* 18px/16px */
+  line-height:1.5rem; /* 24px/16px */  
+}
+
+/*
+===========================================
+ paragraphs
+===========================================
+ */
+
+p {
+  margin-bottom: 1.125rem; /* 18px/16px bottom margin for paragraphs */
+}
+
+p img { margin: 0; }
+
+p.lead {
+  font-size: 1.125rem; /* 18px/16px */
+  line-height:1.5rem ;/* 24px/16px */  
+  margin-bottom: 1.125rem; /* 18px/16px bottom margin for paragraphs */
+  color: #000;
+}
+
+/*
+===========================================
+ blockquotes
+===========================================
+ */
+
+blockquote {
+ font-style: italic;
+ font-size: 1.125rem; /* 18px/16px */
+ line-height:1.5rem ;/* 24px/16px */  
+ margin-bottom: 3.75rem;
+ margin-left: 1.5rem; 
+ border-left: 1px dotted #35bacf;
+ padding-left: 4rem;
+}
+
+blockquote p {
+  margin-bottom: 1.125rem;
+}
+
+blockquote > p:last-child {
+  margin-bottom: 0;
+}
+
+ 
+blockquote:before { 
+ /*content: "\201C";*/
+ display: inline-block;
+ padding-right: .4rem;
+}
+
+blockquote:after { 
+ /*content: "\201D";*/
+ display: inline-block;
+ padding-left: .4rem;
+}
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q:before{
+ content: open-quote;
+ display: inline-block;
+ padding-right: .4rem;
+}
+q:after{
+  content: close-quote;
+ display: inline-block;
+ padding-right: .4rem;
+}
+/*
+===========================================
+code
+===========================================
+ */
+pre {
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 1rem; /* 16px/16px */
+  line-height:1.3125rem; /* 21px/16px */
+  margin-bottom: 1.125rem;
+  padding: 1.6em;
+  overflow: auto;
+  max-width: 100%;
+  color:#000;
+  tab-size:1;
+}
+code, kbd, tt, var {
+  font: 16px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  color:#000;
+}
+
+/*
+===========================================
+ Other Text Elements
+===========================================
+ */
+ strong {
+   font-weight: bold;
+ }
+ dfn, cite, em, i {
+   font-style: italic;
+ }
+ address {
+   margin: 0 0 1.5rem;
+ }
+abbr, acronym {
+  border-bottom: 0.0625rem dotted #666;
+  cursor: help;
+}
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  bottom: 1ex;
+}
+sub {
+  top: .5ex;
+}
+small {
+  font-size: 0.5625rem; /* 9px/16px */
+  line-height:0.75rem; /* 12px/16px */
+
+}
+.large-text {
+  font-size: 4.5rem; /* 72px/16px */
+  line-height:5.25rem; /* 84px/16px */
+}
+del {
+  opacity: 0.8;
+}
+
+
+/*
+===========================================
+ Text-Modifiers
+===========================================
+ */
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+/*
+===========================================
+ print
+===========================================
+ */
+
+@media print {
+
+  * { background: transparent !important;
+          color: #000 !important; /* Black prints faster: h5bp.com/s */
+          box-shadow: none !important;
+          text-shadow: none !important; }
+   
+  p,
+  h2,
+  h3 { orphans: 3;
+       widows: 3;
+       page-break-after: avoid; }
+}
+
+/*
+=============================================
+media queries
+=============================================
+*/
+/* Landscape mobile & down 480px/16px */
+@media (max-width: 30rem) {
+  html{
+    font-size: 80%;
+  }
+  
+}
+/* Portrait tablet to landscape 481px and 767px */
+@media (min-width: 30.0625rem) and (max-width: 47.9375rem) {
+
+html{
+    font-size: 90%;
+  }
+
+}
+
+/* Landscape to small desktop 768px and 1023px  */
+@media (min-width: 48rem) and (max-width: 63.9375rem) {
+  
+}
+
+/* Large Desktop 1024px*/
+@media (min-width:64rem){
+ html{
+    font-size: 100%;
+  }
+}

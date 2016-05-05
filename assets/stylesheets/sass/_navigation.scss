@@ -1,0 +1,166 @@
+/*--------------------------------------------------------------
+links
+--------------------------------------------------------------*/
+
+a {
+	color: #df2226;
+	text-decoration: none;
+	-webkit-transition: all .25s ease-in-out;
+	   -moz-transition: all .25s ease-in-out;
+	     -o-transition: all .25s ease-in-out;
+	           transition: all .25s ease-out;
+}
+
+a:hover,
+a:focus {
+	color: #939597;
+}
+a img {
+	margin-bottom: -4px;
+	margin-bottom: -0.4rem;
+}
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	float: right;
+}
+
+.main-navigation li {
+	float: left;
+	position: relative;
+}
+
+.main-navigation a {
+	display:inline-block;
+	text-decoration: none;
+	color:#ccc;
+	margin:0 30px;
+	position: relative;
+}
+.main-navigation ul a {
+
+}
+
+
+.main-navigation ul ul {
+	background:#404041;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition:    opacity .5s ease-in-out;
+	-ms-transition:     opacity .5s ease-in-out;
+	-o-transition:      opacity .5s ease-in-out;
+	transition:         opacity .5s ease-in-out;
+	left: -999rem;
+	z-index: 99999;
+	width: 240px;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+.main-navigation ul ul a {
+	width:240px;
+	color: #fff;
+	padding: 18px 30px;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.main-navigation ul ul li {
+
+}
+
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+  color: #fff;
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
+}
+
+.main-navigation ul ul a:hover,
+.main-navigation ul ul li.focus > a{
+	background: #df2226;
+ 
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+  opacity: 1;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a {
+}
+
+/* Small menu */
+.menu-toggle {
+	display: none;
+	padding:0;
+	background:none;
+	border: none;
+	outline: none;
+}
+
+/* =Navigation
+----------------------------------------------- */
+
+/* Older/Newer Post Navigation */
+
+
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+	margin: 0;
+	overflow: hidden;
+	clear: both;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	line-height: 1;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+}
+/* =Media queries
+----------------------------------------------- */
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}

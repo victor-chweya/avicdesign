@@ -1,0 +1,258 @@
+@import"avic-framework";
+/*--------------------------------------------------------------
+	STYLE OVERIDES----------------------------------------------------------------*/
+html,body, .site-wrap{
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 90rem;
+  padding: 0 1.55556em;
+  margin: 0 auto;
+
+}
+.background{
+	height: 100%;
+	width: 100%;
+	background: #262626 url(../images/hero.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+.fullscreen,
+.outer {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+
+/* content centering styles */
+.outer {
+    display:table;
+}
+.inner{
+    display:table-cell;
+    position:relative;
+    vertical-align:middle;
+}
+.hero{
+	width: 75%;
+	margin: 0 auto;
+}
+.hero h1{
+	text-transform: uppercase;
+	color: #f7f7f7;
+	font-size: 3.75rem;
+	line-height:4.5rem;
+}
+.hero p{
+	font-size:0.875rem;
+	color:#f7f7f7;
+}
+/* Go down text & Button */
+
+.go-down {
+    position: absolute;
+    right: 0;
+    bottom: 1.125rem;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+}
+.svg path{
+	fill:#df2226;
+}
+
+.highlight{
+	color: #df2226;
+}
+
+.box{
+	position: relative;
+	padding:0 0.375rem;
+}
+.box p {
+	font-size: 0.875rem;
+}
+.box h2{
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
+}
+.page-title{
+	font-size: 2.25rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 4.5rem;
+
+}
+.page-1,.page-2,.page-3, .page-4{
+	padding-top:7.5rem;
+	padding-bottom: 7.5rem;
+	background: #fff;
+}
+.page-2, .page-4{
+	background: #f9f9f9;
+}
+.cta{
+	background: #df2226;
+	padding-top:2.625rem;
+	padding-bottom: 2.625rem;
+}
+.box .svg {
+	margin-bottom: 1.5rem;
+}
+.carousel img{
+	margin-bottom: 1.5rem;
+}
+.carousel h4{
+	margin-bottom: 0;
+	font-size: 0.875rem;		
+	text-transform: uppercase;
+}
+.carousel p{
+	font-size: 0.875rem;
+	margin-bottom: 0;
+	color:#555;
+	padding:0 1.5rem 0.75rem 1.5rem;
+}
+.team{
+	background: #f9f9f9;
+	margin-bottom: 1.875rem;
+}
+.team p{
+	text-transform: capitalize;
+}
+.team img{
+   -webkit-filter: grayscale(1);
+   -moz-filter: grayscale(1);
+   -o-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.team img:hover{
+   -webkit-filter: grayscale(0);
+   -moz-filter: grayscale(0);
+   -o-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-out;
+}
+
+.contact-us {
+	padding-right: 2.25rem;
+}
+.contact-us p{
+	font-size: 0.875rem
+}
+.contact-us .large-text{
+	font-size: 3rem;
+	
+}
+.contact-us .icon{
+	font-size: 1.875rem;
+	padding-right: 1.125rem;
+}
+.site-info{
+	font-family: 'Lato', sans-serif;
+	background: #262626;
+	font-size: 0.75rem;
+	color:#6d6d6d;
+	padding:2.25rem 0;
+}
+
+
+
+/*contact form*/
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+ 
+.req-field-desc {
+	margin:24px 0px;
+    font-style:italic;
+    font-size: 14px;
+}
+.g-recaptcha{
+	margin-bottom: 25px;
+}
+
+/*
+=============================================
+media queries
+=============================================
+*/
+/* Landscape mobile & down */
+@media (max-width: 480px) {
+	.hero{
+		width: 100%;
+	}
+	.hero h1{
+		font-size: 14px;
+		line-height:20px;
+	}
+	.site-logo,
+	.site-logo a {
+	  margin:20px 0;
+	  width: 63px;
+	  height: 20px;
+	  background: url(./img/logo-small.png) 0% 0% no-repeat;
+	}  
+}
+/* Portrait tablet to landscape */
+@media (min-width: 481px) and (max-width: 767px) {
+	.hero{
+		width: 100%;
+	}
+    .hero h1{
+		font-size: 14px;
+		line-height:20px;
+	}
+	.site-logo,
+	.site-logo a {
+	  margin:20px 0;
+	  width: 63px;
+	  height: 20px;
+	  background: url(./img/logo-small.png) 0% 0% no-repeat;
+	}  
+
+}
+
+/* Landscape to small desktop */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.hero{
+		width: 100%;
+	}
+ 
+}
+/* Large Desktop*/
+@media (min-width:1024px){
+
+}

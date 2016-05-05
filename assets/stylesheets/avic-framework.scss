@@ -1,0 +1,26 @@
+/*
+Theme Name: Avic Framework
+Theme URI: http://almacoconsultants.org/
+Author: avicdesign
+Author URI: http://avicdesign.com
+Description: corporate website
+Version: 1.0.0
+License: 2015 copyrighted by Avic Design
+License URI: 
+Text Domain: avicdesign
+Tags: minimal, responsive.
+*/
+
+
+@import "sass/reset";
+@import "sass/grid-inline";
+@import "sass/icons";
+@import "sass/typography";
+@import "sass/elements";
+@import "sass/tables";
+@import "sass/forms";
+@import "sass/navigation";
+@import "sass/clearings";
+@import "sass/header";
+@import url(../javascript/fancybox/jquery.fancybox.css);
+

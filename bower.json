@@ -1,0 +1,18 @@
+{
+  "name": "avic",
+  "description": "one page site for avicdesign",
+  "main": "index.php",
+  "authors": [
+    "victor chweya"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

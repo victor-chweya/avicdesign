@@ -1,0 +1,290 @@
+/*--------------------------------------------------------------
+Forms
+--------------------------------------------------------------*/
+.btn,
+button,
+input,
+select,
+textarea,
+label,
+option {
+  font-size: 100%; /* Corrects font size not being inherited in all browsers */
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: .075rem; 
+  margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+.btn,
+button,
+input {
+  line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+  *overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
+}
+
+.btn::-moz-focus-inner,
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
+}
+
+
+button[disabled],
+input[disabled],
+select[disabled],
+textarea[disabled] {
+	cursor: default;
+	opacity: .5;
+}
+
+.btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    margin:0 auto;
+    color:#fff;
+    background: #df2226;
+    border: 0;
+    border-radius: 2px; 
+    padding: 1.4375rem 5%;
+    font-size: 0.75rem;   
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none; 
+    display:inline-block; 
+    vertical-align:middle; 
+    white-space:nowrap; 
+}
+
+.btn:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    text-decoration: none;
+    outline: none;
+    filter: alpha(opacity=70);
+    opacity: 0.7;  
+    -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+               transition: all .5s ease-out;
+}
+.btn:active,
+.btn:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    outline:none;
+    padding: 23px 5%;
+}
+
+a.btn:hover,
+a.btn:focus{
+  color: #fff;
+}
+
+.btn--s{
+    font-size: .5rem;
+}
+
+.btn--m{   
+    font-size: .75rem;
+}
+
+.btn--l{    
+    font-size: 1.25rem;
+}
+.btn--full-width{
+  width:100%;
+}
+
+.btn--primary{
+    background-color:#2C3E50;
+    
+}
+.btn--secondary{
+    border: 2px solid #FF8000;
+    
+}
+
+.btn--warning{
+    background-color:#F1C40F;
+    
+}
+.btn--danger{
+    background-color: #C0392B;
+   
+}
+.btn--success{
+    background-color:#16A085;
+    }
+.btn--inverse{
+    border:2px solid #fff;
+    background:none;
+    color:#fff;
+    border-radius: 2px;
+}
+a.btn--inverse:hover,.btn--inverse:hover{
+  background:#FFFFFF;
+  color:#df2226;
+  border:2px solid #fff;
+  border-radius: 2px;
+}
+.btn--rounded {
+    border-radius: 3.125rem;
+}
+.btn--disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color:#C0C0C0;
+    color:#9C9F8E;
+}
+
+form,
+fieldset{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
+  padding: 0; /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  box-sizing: content-box;
+}
+
+input[type='search']::-webkit-search-decoration, 
+input[type='search']::-webkit-search-cancel-button, 
+input[type='search']::-webkit-search-results-button, 
+input[type='search']::-webkit-search-results-decoration {
+	-webkit-appearance:none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select{
+	font-family:inherit;
+  border:2px solid #cecece;    
+	border-radius: 2px;
+	padding:0.9375rem; 
+	outline: none;
+	margin: 0;
+  margin-bottom:1.875rem;
+	display: block;
+	background:none;
+  vertical-align:middle;                               
+  line-height:1.5;          
+  width: 100%;
+  position:relative;
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease; 
+}
+
+input,
+textarea,
+select {
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); /* Removing the inner shadow on iOS inputs */
+}
+
+input:focus,
+textarea:focus {
+  background:#fff;
+  color: #333;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+select{
+ padding:1.0625rem 0.9375rem;  
+}
+
+input[type="file"] {
+	border: 1px solid #EBEBEB;
+	padding:1em; 
+	margin: 0;
+	cursor: pointer;
+  width: 21%;
+	min-width:15.2rem;
+}
+
+
+textarea {
+  overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+  vertical-align: top; /* Improves readability and alignment in all browsers */
+}
+
+label,
+legend {
+  font-size: 0.75rem;
+  color:#939597;
+	display: block;
+  text-transform: uppercase;
+	margin-bottom:.75rem;
+}
+label{
+	cursor: pointer;
+}
+
+/* Placeholder text color -- selectors need to be separate to work. */
+
+::-webkit-input-placeholder {
+	color: #d2d2d2;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding-top:0.375rem;
+}
+
+:-moz-placeholder {
+	color: #d2d2d2;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding-top:0.375rem; 	
+}
+
+::-moz-placeholder {
+	color: #d2d2d2;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem; 
+  text-transform: uppercase;	
+	opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */
+  padding-top:0.375rem;
+}
+
+:-ms-input-placeholder {
+	color: #d2d2d2;
+  font-family: 'Lato', sans-serif;
+ font-size: 0.75rem;
+  text-transform: uppercase;
+  padding-top:0.375rem;
+}

@@ -1,0 +1,228 @@
+/*
+Author: victor akunga
+Author URL: http://avicdesign.com
+2014
+*/
+
+/*
+=============================================
+Grid Custom
+=============================================
+*/
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.grid {
+  width:100%;
+  margin: 0 auto;
+}
+
+/*clearfix*/
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* centered grid */
+.grid--center{
+  text-align: center;
+}
+
+
+[class*='col-'] {
+  display:inline-block;
+  float: left;
+  vertical-align: top; 
+  padding: 0.3em;
+}
+
+/* Floats last ".col-" to the right */
+[class*='col-']:last-of-type {
+  float: right
+}
+/*adds padding right to the last col-
+[class*='col-']:last-of-type {
+  padding-right: 10px;
+}
+*/
+
+.col-1{ width: 100%; }
+
+.col-1-2{ width: 50%; }
+
+.col-1-3{ width: 33.333%; }
+.col-2-3{ width: 66.666%; }
+
+.col-1-4{ width: 25%; }
+.col-2-4{ width: 50%; }
+.col-3-4{ width: 75%; }
+
+.col-1-5{ width: 20%; }
+.col-2-5{ width: 40%; }
+.col-3-5{ width: 60%; }
+.col-4-5{ width: 80%; }
+
+.col-1-6{ width: 16.666%; }
+.col-2-6{ width: 33.333%; }
+.col-3-6{ width: 50%; }
+.col-4-6{ width: 66.666%; }
+.col-5-6{ width: 83.333%; }
+
+.col-1-7{ width: 14.2857%; }
+.col-2-7{ width: 28.5714%; }
+.col-3-7{ width: 42.8571%; }
+.col-4-7{ width: 57.1429%; }
+.col-5-7{ width: 71.4286%; }
+.col-6-7{ width: 85.7143%; }
+
+.col-1-8{ width: 12.5%; }
+.col-2-8{ width: 25%; }
+.col-3-8{ width: 37.5%; }
+.col-4-8{ width: 50%; }
+.col-5-8{ width: 62.5%; }
+.col-6-8{ width: 75%; }
+.col-7-8{ width: 87.5%; }
+
+/* opt-in removes padding from col-*/
+.col--no-pad{
+  padding:0;
+}
+/* centers a col*/
+.col--center{
+  display: block;
+  margin:0 auto;
+}
+/* opt-in outside padding 
+.grid--pad {
+  padding: 0 1.250em;
+}*/
+/*.grid--pad > [class*='col-']:last-of-type {
+  padding-right: 1.250em;
+}*/
+
+[class*='push-'] {
+  position: relative;  
+}
+
+.push-1{left: 100%;}
+.push-1-2{left:50%;}
+
+
+/*==============================================
+  codeblocks
+================================================
+*/
+
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.remove-top {
+  margin-top: 0;
+}
+.add-top {
+  margin-top: 1.250em;
+}
+.remove-bottom { 
+  margin-bottom: 0; 
+}
+.half-bottom { 
+  margin-bottom: 0.625em;
+}
+.add-bottom {
+  margin-bottom: 1.250em;
+}
+/*
+=============================================
+layouts
+=============================================
+*/
+.two-thirds{
+  width:66.666666%;
+  margin:0;
+  display:inline-block;
+  vertical-align: top;
+  float:left;
+  padding:0 2em;
+  outline: 1px solid black;
+ 
+ 
+}
+.one-third{
+  width:33.333333%;
+  margin:0;
+  display:inline-block;
+  vertical-align: top;
+  float:left;
+  padding:0 2em;
+  outline: 1px solid black;
+
+}
+.full {
+  width:100%;
+  margin: 0;
+  display:inline-block;
+  vertical-align: top;
+  padding: 0 2em;
+}
+/*
+=============================================
+media queries
+=============================================
+*/
+
+/* Portrait tablet to landscape */
+@media (min-width: 480px) and (max-width: 768px) {
+
+  .col-1-4,
+  .col-1-5,
+  .col-1-6,
+  .col-1-7,
+  .col-1-8 {
+    width: 50%;
+  }
+
+  .col-1-2,
+  .col-1-3,
+  .col-2-3,
+  #primary,
+  #secondary {
+    width: 100%;
+  }
+   [class*='push-'] {
+  position: static;  
+}
+}
+
+/* Landscape to small desktop */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #primary,
+  #secondary {
+    
+  }
+  .col-1-4,
+  .col-1-5,
+  .col-1-6,
+  .col-1-7,
+  .col-1-8 {
+    
+  }
+}
+/* Large Desktop*/
+@media (min-width:1024px){
+
+}

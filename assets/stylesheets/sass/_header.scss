@@ -1,0 +1,145 @@
+/*==============================================
+  SITE HEADER
+================================================
+*/
+
+.site-header{
+  width:100%;
+  background:transparent;
+  position: fixed;
+  line-height:80px;
+  top:0;
+  left: 0;
+  transition: line-height 0.2s linear;
+  z-index:2;
+}
+.site-header.small {
+  line-height: 50px;
+  background-color: rgba(38, 38, 38, 0.9);
+}
+/* Style elements inside of the .site-header container */
+.site-branding {
+}
+.site-title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.site-title a,
+.site-title a:hover {
+  color: #333;
+}
+.site-description {
+   color: #999;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1;
+  opacity: 0.7;
+  margin: 0;
+}
+.site-logo,
+.site-logo a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: red;
+  float: left;
+  height: 40px;
+  width: 170px;
+  margin: 0;
+  padding:0;
+  display:block;
+  font: 0/0 a;
+  text-shadow:none;
+  color: transparent;
+  width: 126px;
+  height: 20px;
+  background: url(../images/logo-small.png) 0% 0% no-repeat;
+}
+
+
+.site-header .icon {
+  font-size: 2rem;
+  text-align: center;
+  color:#dedede;
+}
+
+
+.site-header .icon:hover {
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
+}
+
+/* Style elements social icons */
+.social {
+  display:block;
+  float:right;
+}
+
+.social ul {
+  list-style: none;
+  margin: 0;
+}
+
+.social li {
+  float: left;
+  text-align: center;
+  margin:0;
+}
+
+.social a {
+  text-decoration: none;
+  color:#dedede;  
+}
+.social .icon{
+  font-size: 1.2rem;
+  border-radius: 100%;
+  background:#F3F3F3;
+  line-height: 2;
+  height: 2em;
+  width:2em;
+  margin-right: .5em;
+}
+.social .icon-facebook:hover {
+  color:#3b5998;
+  
+}
+
+.social .icon-twitter:hover {
+  color:#4099ff;
+  
+}
+
+.social .icon-googleplus:hover {
+  color:#DD4B39;
+  
+}
+.social .icon-googleplus:hover {
+  color:#DD4B39;
+  
+}
+.social .icon-googleplus:hover {
+  color:#DD4B39;
+  
+}
+
+.social .icon-behance:hover {
+  color:#007EFF;
+  
+}
+.social .icon-youtube2:hover {
+  color:#CC181E;
+ 
+}
+
+.social .icon-vimeo:hover {
+  color:#20B9EB;
+  
+}
