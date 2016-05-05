@@ -1,4 +1,4 @@
 avicdesign
 ==========
 
-my bloody fucking website
+one page site for avic design agency
