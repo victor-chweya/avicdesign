@@ -1,6 +1,5 @@
 @import"avic-framework";
-/*--------------------------------------------------------------
-	STYLE OVERIDES----------------------------------------------------------------*/
+/*--------------------------------------------------------------STYLE OVERIDES----------------------------------------------------------------*/
 html,body, .site-wrap{
 	background: #fff;
 	width: 100%;
@@ -211,37 +210,50 @@ media queries
 */
 /* Landscape mobile & down */
 @media (max-width: 480px) {
+	.wrapper{
+		padding:0;
+	}
 	.hero{
 		width: 100%;
 	}
 	.hero h1{
-		font-size: 14px;
+		font-size: 22px;
 		line-height:20px;
 	}
-	.site-logo,
-	.site-logo a {
-	  margin:20px 0;
-	  width: 63px;
-	  height: 20px;
-	  background: url(./img/logo-small.png) 0% 0% no-repeat;
-	}  
+	.site-header {
+		line-height:40px;
+	}
+	
+	.main-navigation ul {
+		display:none;
+	}
+	.site-header.small {
+		line-height:20px;
+	}
+ 
 }
 /* Portrait tablet to landscape */
 @media (min-width: 481px) and (max-width: 767px) {
+	.wrapper{
+		padding:0;
+	}
 	.hero{
 		width: 100%;
 	}
-    .hero h1{
-		font-size: 14px;
+	.hero h1{
+		font-size: 22px;
 		line-height:20px;
 	}
-	.site-logo,
-	.site-logo a {
-	  margin:20px 0;
-	  width: 63px;
-	  height: 20px;
-	  background: url(./img/logo-small.png) 0% 0% no-repeat;
-	}  
+	.site-header {
+		line-height:40px;
+	}
+	
+	.main-navigation ul {
+		display:none;
+	}
+	.site-header.small {
+		line-height:20px;
+	}
 
 }
 
