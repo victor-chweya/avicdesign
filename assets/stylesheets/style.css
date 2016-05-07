@@ -55,6 +55,21 @@ html {
   /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
   box-sizing: border-box; }
 
+@-moz-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-webkit-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
 body {
   background: #f1f1f1;
   /* Fallback for when there is no custom background color defined. */ }
@@ -3071,18 +3086,17 @@ a img {
   color: #20B9EB; }
 
 /*--------------------------------------------------------------STYLE OVERIDES----------------------------------------------------------------*/
-html, body, .site-wrap {
+html,
+body {
   background: #fff;
   width: 100%;
   height: 100%; }
 
-.wrapper {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  max-width: 90rem;
-  padding: 0 1.55556em;
-  margin: 0 auto; }
+.container,
+.container-fluid,
+.row,
+[class*='col-'] {
+  height: 100%; }
 
 .background {
   height: 100%;
@@ -3090,13 +3104,12 @@ html, body, .site-wrap {
   background: #262626 url(../images/hero.jpg) no-repeat 0 0;
   background-size: cover; }
 
-.fullscreen,
 .outer {
   width: 100%;
   height: 100%;
   overflow: hidden; }
 
-/* content centering styles */
+/* content centering styles for the header background */
 .outer {
   display: table; }
 
@@ -3111,9 +3124,7 @@ html, body, .site-wrap {
 
 .hero h1 {
   text-transform: uppercase;
-  color: #f7f7f7;
-  font-size: 3.75rem;
-  line-height: 4.5rem; }
+  color: #f7f7f7; }
 
 .hero p {
   font-size: 0.875rem;
@@ -3135,10 +3146,6 @@ html, body, .site-wrap {
 
 .highlight {
   color: #df2226; }
-
-.box {
-  position: relative;
-  padding: 0 0.375rem; }
 
 .box p {
   font-size: 0.875rem; }
@@ -3185,13 +3192,13 @@ html, body, .site-wrap {
   padding: 0 1.5rem 0.75rem 1.5rem; }
 
 .team {
-  background: #f9f9f9;
   margin-bottom: 1.875rem; }
 
 .team p {
   text-transform: capitalize; }
 
 .team img {
+  border-radius: 5px;
   -webkit-filter: grayscale(1);
   -moz-filter: grayscale(1);
   -o-filter: grayscale(1);
@@ -3204,9 +3211,6 @@ html, body, .site-wrap {
   filter: grayscale(0);
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-out; }
-
-.contact-us {
-  padding-right: 2.25rem; }
 
 .contact-us p {
   font-size: 0.875rem; }
@@ -3257,41 +3261,20 @@ html, body, .site-wrap {
 media queries
 =============================================
 */
-/* Landscape mobile & down */
-@media (max-width: 480px) {
-  .wrapper {
-    padding: 0; }
+@media (min-width: 544px) {
+  html {
+    font-size: 70%; }
   .hero {
-    width: 100%; }
-  .hero h1 {
-    font-size: 22px;
-    line-height: 20px; }
-  .site-header {
-    line-height: 40px; }
-  .main-navigation ul {
-    display: none; }
-  .site-header.small {
-    line-height: 20px; } }
+    width: 90%; } }
 
-/* Portrait tablet to landscape */
-@media (min-width: 481px) and (max-width: 767px) {
-  .wrapper {
-    padding: 0; }
-  .hero {
-    width: 100%; }
-  .hero h1 {
-    font-size: 22px;
-    line-height: 20px; }
-  .site-header {
-    line-height: 40px; }
-  .main-navigation ul {
-    display: none; }
-  .site-header.small {
-    line-height: 20px; } }
+@media (min-width: 768px) {
+  html {
+    font-size: 100%; } }
 
-/* Landscape to small desktop */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .hero {
-    width: 100%; } }
+@media (min-width: 992px) {
+  html {
+    font-size: 100%; } }
 
-/* Large Desktop*/
+@media (min-width: 1200px) {
+  html {
+    font-size: 100%; } }

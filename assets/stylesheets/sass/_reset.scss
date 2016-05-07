@@ -39,6 +39,22 @@ html {
   box-sizing:         border-box;
 }
 
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-webkit-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
 body {
   background: #f1f1f1; /* Fallback for when there is no custom background color defined. */
 }
