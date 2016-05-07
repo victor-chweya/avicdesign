@@ -1,0 +1,39 @@
+/*
+Theme Name: Avic Framework
+Theme URI: http://www.avicdesign.com/
+Author: avicdesign
+Author URI: http://www.avicdesign.com
+Description: corporate website
+Version: 1.0.1
+License: 2015 copyrighted by Avic Design
+License URI: 
+Text Domain: avicdesign
+Tags: minimal, responsive.
+*/
+
+
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+// Reset and dependencies
+@import "reset";
+
+// Core CSS
+@import "icons";
+@import "typography";
+@import "elements";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "navigation";
+@import "clearings";
+@import "header";
+
+// Components
+
+
+// Components w/ JavaScript
+@import url(../javascript/fancybox/jquery.fancybox.css);
+
+// Utility classes
